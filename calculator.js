@@ -1,5 +1,7 @@
-import inquirer from "inquirer";
-let answer = await inquirer.prompt([
+"use strict";
+exports.__esModule = true;
+var inquirer_1 = require("inquirer");
+var answer = await inquirer_1["default"].prompt([
     {
         type: "number",
         name: "firstNumber",
@@ -18,21 +20,21 @@ let answer = await inquirer.prompt([
     }
 ]);
 if (answer.firstNumber && answer.secondNumber && answer.operator) {
-    let result = 0;
+    var result = 0;
     if (answer.operator === "+") {
         result = answer.firstNumber + answer.secondNumber;
-        console.log(`The result of first and second numbers are  ${result}`);
+        console.log("The result of first and second numbers are  ".concat(result));
     }
     if (answer.operator === "-") {
         result = answer.firstNumber - answer.secondNumber;
-        console.log(`The result of first and second numbers are  ${result}`);
+        console.log("The result of first and second numbers are  ".concat(result));
     }
     if (answer.operator === "*") {
         result = answer.firstNumber * answer.secondNumber;
-        console.log(`The result of first and second numbers are  ${result}`);
+        console.log("The result of first and second numbers are  ".concat(result));
     }
     if (answer.operator === "/") {
         result = answer.firstNumber / answer.secondNumber;
-        console.log(`The result of first and second numbers are  ${result}`);
+        console.log("The result of first and second numbers are  ".concat(result));
     }
 }
